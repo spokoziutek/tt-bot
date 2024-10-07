@@ -1,24 +1,46 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import './App.css';
+import SideBar from './SideBar/SideBar';
+import ServerStatus from './ServerStatus/ServerStatus';
+import FishCalculator from './FishCalulator/FishCalculator';
+
+function Home() {
+  return (
+    <div className='flex min-h-screen bg-gray-300 dark:bg-gray-700 items-center justify-center'>
+      <SideBar />
+      <ServerStatus />
+    </div>
+  ); 
+}
+
+function FishPage () {
+  return (
+    <div className='flex min-h-screen bg-gray-300 dark:bg-gray-700 items-center justify-center'>
+      <SideBar />
+      <FishCalculator />
+    </div>
+  )
+}
+
+function StoragesPage () {
+  return (
+    <div className='flex min-h-screen bg-gray-300 dark:bg-gray-700 items-center justify-center'>
+      <SideBar />
+
+    </div>
+  )
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/FishPage" element={<FishPage />} />
+      </Routes>
+    </Router>
   );
 }
 
