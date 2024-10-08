@@ -37,7 +37,7 @@ const ServerStatus = () => {
       <p className="mb-2 font-normal text-white">Status:</p>
       <p className="mb-2 font-normal text-white">{uptime}</p>
       <p className="mb-2 font-normal text-white">
-        DXP: {dxp[0]} ({dxp[1]})
+        DXP: {dxp[0]} {dxp[1]}
       </p>
       <p className="mb-6 font-normal text-white">{dxpDuration}</p>
       <div className="flex justify-center">
