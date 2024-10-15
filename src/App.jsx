@@ -28,7 +28,6 @@ function StoragesPage () {
   return (
     <div className='flex min-h-screen bg-gray-300 dark:bg-gray-700 items-center justify-center'>
       <SideBar />
-
     </div>
   )
 }

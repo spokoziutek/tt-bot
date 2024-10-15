@@ -8,10 +8,10 @@
     @apply relative flex items-center justify-center text-2xl
           h-12 w-12 mt-2 mb-2 mx-auto  
         bg-gray-400 dark:bg-gray-800 hover:bg-blue-600 dark:hover:bg-green-600 
-        text-blue-500 dark:text-green-400 hover:text-white
+        text-blue-500 dark:text-green-400 hover:text-white dark:hover:text-white
           hover:rounded-xl rounded-3xl
           transition-all duration-300 ease-linear
-          cursor-pointer shadow-lg ;
+          cursor-pointer shadow-lg;
   }
 
   .sidebar-hr {
@@ -28,7 +28,7 @@
   }
 
   .calculator-label {
-    @apply block text-lg font-semibold text-gray-700 dark:text-white;
+    @apply block text-lg font-semibold text-gray-700 dark:text-white p-1;
   }
 
   .calculator-input {
